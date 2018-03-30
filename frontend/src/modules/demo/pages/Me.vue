@@ -9,7 +9,7 @@
       <cell title="关于" @click.native="$vux.alert.show({title: '关于', content: 'DEMO'})" is-link></cell>
       <CheckUpdate></CheckUpdate>
     </group>
-    <y-footer select="me"></y-footer>
+    <!--<y-footer select="me"></y-footer>-->
   </Layout>
 </template>
 
@@ -21,12 +21,12 @@
   export default {
     name: 'me',
     components: {Layout, YFooter, CheckUpdate},
-    data() {
+    data () {
       return {
         loading: true,
       }
     },
-    mounted() {
+    mounted () {
       window.setTimeout(() => {
         this.loading = false
       }, 1000)

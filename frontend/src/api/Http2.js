@@ -77,14 +77,14 @@ export const fetch = (url, config = {}) => {
     })
 }
 
-export const post = (url,params) => {
-  return axios.post(url, params);
+export const post = (url, params) => {
+  return axios.post(url, params)
 }
 
-export const edit = (url,params) => {
-  return axios.put(url, params);
-};
+export const edit = (url, params) => {
+  return axios.put(url, params)
+}
 
 export const del = (url) => {
-  return axios.delete(url);
+  return axios.delete(url)
 }

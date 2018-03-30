@@ -1,10 +1,7 @@
 <template>
   <Layout :loading="loading">
     <x-header :left-options="{showBack: false}" title="test">工作台</x-header>
-    <div>
-      <divider>{{ $t('title') }}</divider>
-    </div>
-    <y-footer select="work"></y-footer>
+    <!--<y-footer select="work"></y-footer>-->
   </Layout>
 </template>
 
@@ -17,10 +14,12 @@
   export default {
     name: 'work',
     components: {Layout, YFooter, CheckUpdate, Divider, Card},
-    data() {
+    data () {
       return {
         loading: true,
       }
+    },
+    method: {
     },
     mounted() {
       window.setTimeout(() => {
